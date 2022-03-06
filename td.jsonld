@@ -1,0 +1,60 @@
+{
+  "title": "Hue Light",
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    {
+      "@language": "en"
+    }
+  ],
+  "@type": "Thing",
+  "security": [
+    "nosec_sc"
+  ],
+  "id": "C8:84:C2:D0:59:A9",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "properties": {
+    "version": {
+      "type": "string",
+      "readOnly": true,
+      "forms": [
+        {
+          "href": "http://localhost:3001/properties/version",
+          "contentType": "application/json",
+          "op": [
+            "readproperty"
+          ]
+        }
+      ]
+    },
+    "model": {
+      "type": "string",
+      "readOnly": true,
+      "forms": [
+        {
+          "href": "http://localhost:3001/properties/model",
+          "contentType": "application/json",
+          "op": [
+            "readproperty"
+          ]
+        }
+      ]
+    },
+    "manufacturer": {
+      "type": "string",
+      "readOnly": true,
+      "forms": [
+        {
+          "href": "http://localhost:3001/properties/manufacturer",
+          "contentType": "application/json",
+          "op": [
+            "readproperty"
+          ]
+        }
+      ]
+    }
+  }
+}
